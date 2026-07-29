@@ -205,13 +205,62 @@
                 </ul>
             </nav>
 
-            <!-- CTA desktop -->
-            <a
-                class="button button--primary header__cta"
-                href="#orcamento"
-            >
-                Solicitar orçamento
-            </a>
+            <div class="header__actions">
+                <a
+                    class="header__whatsapp"
+                    href="https://wa.me/5514997674157?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento%20para%20uma%20landing%20page."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Entrar em contato pelo WhatsApp"
+                    title="Falar pelo WhatsApp"
+                >
+                    <svg
+                        width="21"
+                        height="21"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M20.5 11.8C20.5 16.5 16.7 20.3 12 20.3C10.5 20.3 9.1 19.9 7.9 19.2L3.5 20.5L4.8 16.3C4 15 3.5 13.5 3.5 11.8C3.5 7.1 7.3 3.3 12 3.3C16.7 3.3 20.5 7.1 20.5 11.8Z"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+
+                        <path
+                            d="M9 8.3C9.2 8 9.5 8 9.7 8H10C10.2 8 10.4 8.1 10.5 8.4L11.1 9.8C11.2 10 11.2 10.2 11 10.4L10.5 11C10.4 11.2 10.4 11.3 10.5 11.5C11 12.4 11.8 13.2 12.8 13.7C13 13.8 13.2 13.8 13.3 13.6L14 12.8C14.2 12.6 14.4 12.6 14.6 12.7L16 13.4C16.2 13.5 16.3 13.7 16.3 13.9C16.2 14.5 16 15 15.6 15.4C15.2 15.8 14.6 16 14 16C13.1 16 11.7 15.5 10.3 14.3C8.8 13 8 11.3 8 10.2C8 9.5 8.3 8.8 9 8.3Z"
+                            fill="currentColor"
+                        />
+                    </svg>
+                </a>
+
+                <a
+                    class="header__quote-button"
+                    href="#orcamento"
+                >
+                    Solicitar orçamento
+
+                    <svg
+                        width="17"
+                        height="17"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M5 12H19M13 6L19 12L13 18"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </a>
+            </div>
 
             <!-- Botão do menu mobile -->
             <button
@@ -258,9 +307,6 @@
             <div class="container hero__container">
                 <!-- Conteúdo textual -->
                 <div class="hero__content">
-                    <span class="badge hero__badge">
-                        Landing pages profissionais
-                    </span>
 
                     <h1
                         class="hero__title"
@@ -6444,19 +6490,9 @@
         <div class="footer__top">
             <!-- Marca -->
             <div class="footer__brand">
-                <a
-                    class="footer__logo"
-                    href="#inicio"
-                    aria-label="Voltar ao início da página"
-                >
-                    <img
-                        class="footer__logo-image"
-                        src="assets/images/logo-par-tech.png"
-                        alt="PAR Tech"
-                        width="170"
-                        height="52"
-                        loading="lazy"
-                    >
+                <a class="footer__logo" href="#inicio">
+                    <span class="footer__logo-par">PAR</span>
+                    <span class="footer__logo-tech">Tech</span>
                 </a>
 
                 <p class="footer__description">
@@ -6707,7 +6743,7 @@
                 <address class="footer__contact">
                     <a
                         class="footer-contact"
-                        href="https://wa.me/5500000000000?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20as%20landing%20pages%20da%20PAR%20Tech."
+                        href="https://wa.me/5514997674157?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20as%20landing%20pages%20da%20PAR%20Tech."
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -6904,75 +6940,6 @@
         </div>
     </div>
 </footer>
-
-<!-- =================================================
-     BOTÃO FLUTUANTE DO WHATSAPP
-================================================== -->
-
-<a
-    class="whatsapp-float"
-    href="https://wa.me/5514997674157?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento%20para%20uma%20landing%20page."
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Entrar em contato com a PAR Tech pelo WhatsApp"
-    data-whatsapp-float
->
-    <svg
-        width="29"
-        height="29"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-    >
-        <path
-            d="M20.5 11.8C20.5 16.5 16.7 20.3 12 20.3C10.5 20.3 9.1 19.9 7.9 19.2L3.5 20.5L4.8 16.3C4 15 3.5 13.5 3.5 11.8C3.5 7.1 7.3 3.3 12 3.3C16.7 3.3 20.5 7.1 20.5 11.8Z"
-            stroke="currentColor"
-            stroke-width="1.8"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-        />
-
-        <path
-            d="M9 8.3C9.2 8 9.5 8 9.7 8H10C10.2 8 10.4 8.1 10.5 8.4L11.1 9.8C11.2 10 11.2 10.2 11 10.4L10.5 11C10.4 11.2 10.4 11.3 10.5 11.5C11 12.4 11.8 13.2 12.8 13.7C13 13.8 13.2 13.8 13.3 13.6L14 12.8C14.2 12.6 14.4 12.6 14.6 12.7L16 13.4C16.2 13.5 16.3 13.7 16.3 13.9C16.2 14.5 16 15 15.6 15.4C15.2 15.8 14.6 16 14 16C13.1 16 11.7 15.5 10.3 14.3C8.8 13 8 11.3 8 10.2C8 9.5 8.3 8.8 9 8.3Z"
-            fill="currentColor"
-        />
-    </svg>
-
-    <span class="whatsapp-float__tooltip">
-        Fale conosco
-    </span>
-</a>
-
-<!-- =================================================
-     BOTÃO VOLTAR AO TOPO
-================================================== -->
-
-<button
-    class="back-to-top"
-    type="button"
-    aria-label="Voltar ao topo da página"
-    title="Voltar ao topo"
-    data-back-to-top
-    hidden
->
-    <svg
-        width="22"
-        height="22"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-    >
-        <path
-            d="M6 15L12 9L18 15"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-        />
-    </svg>
-</button>
 
 <!-- =================================================
      MENSAGEM PARA JAVASCRIPT DESATIVADO
