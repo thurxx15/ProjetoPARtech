@@ -268,7 +268,7 @@
                 id="mobile-menu-button"
                 type="button"
                 aria-label="Abrir menu de navegação"
-                aria-controls="main-navigation"
+                aria-controls="mobile-menu"
                 aria-expanded="false"
             >
                 <span class="header__menu-icon" aria-hidden="true">
@@ -279,6 +279,90 @@
             </button>
         </div>
     </header>
+
+    <div
+        class="mobile-menu-overlay"
+        id="mobile-menu-overlay"
+        aria-hidden="true"
+    ></div>
+
+    <aside
+        class="mobile-menu"
+        id="mobile-menu"
+        aria-hidden="true"
+        aria-label="Menu de navegação mobile"
+    >
+        <nav class="mobile-menu__navigation">
+            <ul class="mobile-menu__list">
+                <li>
+                    <a class="mobile-menu__link" href="#inicio">
+                        Início
+                    </a>
+                </li>
+
+                <li>
+                    <a class="mobile-menu__link" href="#servicos">
+                        Serviços
+                    </a>
+                </li>
+
+                <li>
+                    <a class="mobile-menu__link" href="#modelos">
+                        Modelos
+                    </a>
+                </li>
+
+                <li>
+                    <a class="mobile-menu__link" href="#portfolio">
+                        Portfólio
+                    </a>
+                </li>
+
+                <li>
+                    <a class="mobile-menu__link" href="#como-funciona">
+                        Como funciona
+                    </a>
+                </li>
+
+                <li>
+                    <a class="mobile-menu__link" href="#faq">
+                        Dúvidas frequentes
+                    </a>
+                </li>
+            </ul>
+
+            <div class="mobile-menu__cta">
+                <a
+                    class="button button--primary"
+                    href="#orcamento"
+                >
+                    Solicitar orçamento
+                </a>
+
+                <a
+                    class="button button--whatsapp"
+                    href="https://wa.me/5514997674157?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Falar pelo WhatsApp
+                </a>
+            </div>
+
+            <div class="mobile-menu__contact">
+                <span class="mobile-menu__contact-label">
+                    Atendimento
+                </span>
+
+                <a
+                    class="mobile-menu__contact-link"
+                    href="mailto:contato@partech.com.br"
+                >
+                    contato@partech.com.br
+                </a>
+            </div>
+        </nav>
+    </aside>
 
     <!-- =====================================================
          CONTEÚDO PRINCIPAL
@@ -308,6 +392,11 @@
                 <!-- Conteúdo textual -->
                 <div class="hero__content">
 
+                    <div class="hero__badge">
+                        <span class="hero__badge-dot"></span>
+                        Landing Pages Profissionais para Empresas
+                    </div>
+                    
                     <h1
                         class="hero__title"
                         id="hero-title"

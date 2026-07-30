@@ -649,170 +649,6 @@ main {
 }
 
 /* =====================================================
-   11. FORMULÁRIOS — BASE
-===================================================== */
-
-.form-field {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-2);
-}
-
-.form-field__label {
-    color: var(--color-gray-800);
-    font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-semibold);
-}
-
-.form-field__label span {
-    color: var(--color-error);
-}
-
-.form-field__input,
-.form-field__select,
-.form-field__textarea {
-    width: 100%;
-    min-height: 50px;
-    padding: 0.85rem 1rem;
-
-    color: var(--color-gray-800);
-    font-size: var(--font-size-sm);
-
-    background-color: var(--color-white);
-    border: 1px solid var(--color-gray-300);
-    border-radius: var(--radius-md);
-    outline: none;
-
-    transition:
-        border-color var(--transition-fast),
-        box-shadow var(--transition-fast),
-        background-color var(--transition-fast);
-}
-
-.form-field__textarea {
-    min-height: 150px;
-    line-height: var(--line-height-normal);
-}
-
-.form-field__input::placeholder,
-.form-field__textarea::placeholder {
-    color: var(--color-gray-400);
-}
-
-.form-field__input:hover,
-.form-field__select:hover,
-.form-field__textarea:hover {
-    border-color: var(--color-gray-400);
-}
-
-.form-field__input:focus,
-.form-field__select:focus,
-.form-field__textarea:focus {
-    border-color: var(--color-primary);
-    box-shadow: 0 0 0 4px rgba(0, 102, 255, 0.1);
-}
-
-.form-field__input[aria-invalid="true"],
-.form-field__select[aria-invalid="true"],
-.form-field__textarea[aria-invalid="true"] {
-    border-color: var(--color-error);
-    background-color: var(--color-error-soft);
-}
-
-.form-field__help {
-    color: var(--color-gray-500);
-    font-size: var(--font-size-xs);
-    line-height: 1.5;
-}
-
-.form-field__error {
-    min-height: 1rem;
-
-    color: var(--color-error);
-    font-size: var(--font-size-xs);
-    font-weight: var(--font-weight-medium);
-}
-
-.form-field__footer {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: var(--space-4);
-}
-
-.form-field__counter {
-    margin-left: auto;
-
-    color: var(--color-gray-500);
-    font-size: var(--font-size-xs);
-    white-space: nowrap;
-}
-
-/* =====================================================
-   12. CHECKBOXES
-===================================================== */
-
-.checkbox {
-    position: relative;
-
-    display: flex;
-    align-items: flex-start;
-    gap: var(--space-3);
-
-    cursor: pointer;
-}
-
-.checkbox__input {
-    position: absolute;
-
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-
-    opacity: 0;
-    pointer-events: none;
-}
-
-.checkbox__control {
-    display: inline-flex;
-    flex: 0 0 auto;
-    align-items: center;
-    justify-content: center;
-
-    width: 22px;
-    height: 22px;
-    margin-top: 1px;
-
-    color: transparent;
-    background-color: var(--color-white);
-    border: 1px solid var(--color-gray-300);
-    border-radius: 6px;
-
-    transition:
-        color var(--transition-fast),
-        background-color var(--transition-fast),
-        border-color var(--transition-fast),
-        box-shadow var(--transition-fast);
-}
-
-.checkbox__input:checked + .checkbox__control {
-    color: var(--color-white);
-    background-color: var(--color-primary);
-    border-color: var(--color-primary);
-}
-
-.checkbox__input:focus-visible + .checkbox__control {
-    border-color: var(--color-primary);
-    box-shadow: 0 0 0 4px rgba(0, 102, 255, 0.12);
-}
-
-.checkbox__label {
-    color: var(--color-gray-700);
-    font-size: var(--font-size-sm);
-    line-height: 1.5;
-}
-
-/* =====================================================
    13. TABELAS
 ===================================================== */
 
@@ -1740,6 +1576,35 @@ main {
 
 .hero__content {
     max-width: 690px;
+}
+
+.hero__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+
+    margin-bottom: 1.5rem;
+    padding: 0.50rem 1rem;
+
+    color: var(--color-primary-light);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+
+    background: rgba(0, 102, 255, .08);
+
+    border: 1px solid rgba(0, 102, 255, .18);
+    border-radius: 999px;
+}
+
+.hero__badge-dot {
+    width: 8px;
+    height: 8px;
+
+    background: var(--color-primary);
+    border-radius: 50%;
+
+    box-shadow: 0 0 12px rgba(0,102,255,.5);
 }
 
 .hero__title {
@@ -8243,11 +8108,6 @@ main {
 }
 
 @media (max-width: 560px) {
-    .faq__support {
-        flex-direction: column;
-        padding: var(--space-5);
-    }
-
     .accordion-item {
         border-radius: var(--radius-md);
     }
@@ -8537,10 +8397,6 @@ main {
         7vh,
         6rem
     );
-}
-
-.quote__direct-contact {
-    margin-top: auto;
 }
 
 .quote-benefit {
