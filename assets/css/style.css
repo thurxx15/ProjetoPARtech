@@ -10717,3 +10717,554 @@ a.footer-contact:hover {
         white-space: nowrap;
     }
 }
+
+/* =====================================================
+   CARDS COMPACTOS EM TELAS MENORES
+===================================================== */
+
+@media (max-width: 768px) {
+
+    /* Espaço geral entre cards */
+    .problem__grid,
+    .benefits__grid,
+    .services__grid,
+    .models__grid,
+    .portfolio__grid,
+    .included__grid,
+    .process__steps {
+        gap: 1rem;
+    }
+
+    /* Estrutura geral dos principais cards */
+    .card,
+    .problem-card,
+    .benefit-card,
+    .service-card,
+    .model-card,
+    .portfolio-card,
+    .included-card,
+    .process-step__card {
+        padding: 1.25rem;
+        border-radius: 1rem;
+    }
+
+    /* Ícones menores */
+    .problem-card__icon,
+    .benefit-card__icon,
+    .service-card__icon,
+    .included-card__icon {
+        width: 46px;
+        height: 46px;
+    }
+
+    .problem-card__icon svg,
+    .benefit-card__icon svg,
+    .service-card__icon svg,
+    .included-card__icon svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    /* Títulos menores */
+    .problem-card__title,
+    .benefit-card__title,
+    .service-card__title,
+    .model-card__title,
+    .portfolio-card__title,
+    .included-card__title {
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+
+    /* Descrições mais compactas */
+    .problem-card__description,
+    .benefit-card__description,
+    .service-card__description,
+    .model-card__description,
+    .portfolio-card__description {
+        margin-top: 0.5rem;
+        font-size: 0.875rem;
+        line-height: 1.55;
+    }
+
+    /* Listas internas mais próximas */
+    .problem-card__list,
+    .service-card__features,
+    .model-card__features,
+    .portfolio-card__tags {
+        margin-top: 0.85rem;
+        gap: 0.5rem;
+    }
+
+    .problem-card__item,
+    .service-card__feature,
+    .model-card__features li {
+        font-size: 0.82rem;
+        line-height: 1.45;
+    }
+
+    /* Imagens dos modelos menores */
+    .model-card__preview {
+        min-height: 210px;
+    }
+
+    /* Parte visual do portfólio menor */
+    .portfolio-card__visual {
+        min-height: 230px;
+    }
+
+    /* Conteúdo dos cards com imagem */
+    .model-card__content,
+    .portfolio-card__content {
+        padding: 1.15rem;
+    }
+
+    /* Rodapés dos cards */
+    .service-card__footer,
+    .portfolio-card__details {
+        margin-top: 1rem;
+        padding-top: 1rem;
+    }
+
+    /* Botões e links menores dentro dos cards */
+    .service-card__link,
+    .model-card__link,
+    .portfolio-card__link,
+    .benefit-card__link {
+        font-size: 0.82rem;
+    }
+
+    /* Cards da seção Como funciona */
+    .process-step__card {
+        min-height: auto;
+    }
+
+    /* Card da FAQ */
+    .faq__support {
+        min-height: auto;
+        padding: 1.25rem;
+        gap: 1rem;
+    }
+
+    .faq__support-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .faq__support-title {
+        font-size: 1.05rem;
+    }
+
+    .faq__support-description {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+}
+
+/* =====================================================
+   CARDS AINDA MAIS COMPACTOS EM CELULARES PEQUENOS
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .problem__grid,
+    .benefits__grid,
+    .services__grid,
+    .models__grid,
+    .portfolio__grid,
+    .included__grid,
+    .process__steps {
+        gap: 0.85rem;
+    }
+
+    .card,
+    .problem-card,
+    .benefit-card,
+    .service-card,
+    .model-card,
+    .portfolio-card,
+    .included-card,
+    .process-step__card {
+        padding: 1rem;
+        border-radius: 0.875rem;
+    }
+
+    .problem-card__icon,
+    .benefit-card__icon,
+    .service-card__icon,
+    .included-card__icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 0.75rem;
+    }
+
+    .problem-card__icon svg,
+    .benefit-card__icon svg,
+    .service-card__icon svg,
+    .included-card__icon svg {
+        width: 19px;
+        height: 19px;
+    }
+
+    .problem-card__title,
+    .benefit-card__title,
+    .service-card__title,
+    .model-card__title,
+    .portfolio-card__title,
+    .included-card__title {
+        font-size: 1rem;
+    }
+
+    .problem-card__description,
+    .benefit-card__description,
+    .service-card__description,
+    .model-card__description,
+    .portfolio-card__description {
+        font-size: 0.8rem;
+        line-height: 1.45;
+    }
+
+    .problem-card__item,
+    .service-card__feature,
+    .model-card__features li {
+        font-size: 0.77rem;
+    }
+
+    .model-card__preview {
+        min-height: 170px;
+    }
+
+    .portfolio-card__visual {
+        min-height: 190px;
+    }
+
+    .model-card__content,
+    .portfolio-card__content {
+        padding: 1rem;
+    }
+
+    .service-card__features,
+    .model-card__features {
+        gap: 0.4rem;
+    }
+
+    .portfolio-card__tags {
+        gap: 0.35rem;
+    }
+
+    .portfolio-card__tags li {
+        padding: 0.35rem 0.55rem;
+        font-size: 0.68rem;
+    }
+
+    .faq__support {
+        padding: 1rem;
+    }
+}
+
+/* =====================================================
+   SOLUÇÕES POR SEGMENTO — ESTRUTURA BASE
+===================================================== */
+
+.model-card-slot {
+    min-width: 0;
+}
+
+.model-card-slot > .model-card {
+    width: 100%;
+}
+
+/* O preview agora também pode ser um link */
+
+.model-card__preview {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* =====================================================
+   SOLUÇÕES POR SEGMENTO — CELULAR
+===================================================== */
+
+@media (max-width: 680px) {
+
+    .models__grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: stretch;
+        gap: 0.7rem;
+
+        width: 100%;
+    }
+
+    .model-card-slot {
+        display: flex;
+
+        width: 100%;
+        min-width: 0;
+    }
+
+    .model-card-slot > .model-card {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        min-width: 0;
+        height: 100%;
+        min-height: 0;
+
+        overflow: hidden;
+
+        border-radius: 0.85rem;
+    }
+
+    /* =================================================
+       MOCKUP CLICÁVEL
+    ================================================= */
+
+    .model-card__preview {
+        display: block;
+
+        position: relative;
+
+        width: 100%;
+        min-width: 0;
+        height: auto;
+        min-height: 0;
+
+        padding: 0.45rem;
+
+        overflow: hidden;
+
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .model-card__image {
+        width: 100%;
+        min-width: 0;
+
+        aspect-ratio: 16 / 10;
+
+        overflow: hidden;
+        border-radius: 0.55rem;
+    }
+
+    .model-layout {
+        width: 100%;
+        height: 100%;
+        min-width: 0;
+
+        transform: none;
+    }
+
+    /*
+     * Esconde a categoria colocada sobre o mockup.
+     * O card terá apenas mockup, título, tags e ação.
+     */
+
+    .model-card__category {
+        display: none;
+    }
+
+    /* Indicação discreta de que o mockup é clicável */
+
+    .model-card__preview::after {
+        content: "Ver";
+
+        position: absolute;
+        right: 0.7rem;
+        bottom: 0.7rem;
+
+        padding: 0.2rem 0.38rem;
+
+        color: #ffffff;
+        background: rgba(0, 0, 0, 0.68);
+        border-radius: 999px;
+
+        font-size: 0.46rem;
+        font-weight: 700;
+        line-height: 1;
+
+        pointer-events: none;
+    }
+
+    /* =================================================
+       CONTEÚDO
+    ================================================= */
+
+    .model-card__content {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+
+        width: 100%;
+        min-width: 0;
+
+        padding: 0.7rem;
+    }
+
+    /*
+     * Remove a categoria artificial criada anteriormente
+     * com ::before.
+     */
+
+    .model-card__content::before {
+        display: none;
+        content: none;
+    }
+
+    .model-card__title {
+        margin: 0;
+
+        font-size: 0.8rem;
+        line-height: 1.2;
+    }
+
+    /* Remove completamente o texto explicativo */
+
+    .model-card__description {
+        display: none;
+    }
+
+    /* =================================================
+       TAGS PEQUENAS
+    ================================================= */
+
+    .model-card__features {
+        display: flex;
+        flex-wrap: wrap;
+
+        margin-top: 0.45rem;
+        gap: 0.18rem;
+    }
+
+    .model-card__features li {
+        display: inline-flex;
+        align-items: center;
+
+        max-width: 100%;
+
+        padding: 0.16rem 0.28rem;
+        gap: 0.18rem;
+
+        overflow: hidden;
+
+        font-size: 0.44rem;
+        line-height: 1.1;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .model-card__features li::before {
+        flex: 0 0 auto;
+
+        width: 3px;
+        height: 3px;
+    }
+
+    /* =================================================
+       BOTÃO PEQUENO
+    ================================================= */
+
+    .model-card__link {
+        display: inline-flex;
+        align-items: center;
+        align-self: flex-start;
+
+        margin-top: auto;
+        padding-top: 0.55rem;
+        gap: 0.18rem;
+
+        font-size: 0;
+        line-height: 1;
+
+        text-decoration: none;
+    }
+
+    .model-card__link::before {
+        content: "Ver demonstração";
+
+        padding: 0.3rem 0.45rem;
+
+        border: 1px solid currentColor;
+        border-radius: 999px;
+
+        font-size: 0.46rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .model-card__link svg {
+        width: 9px;
+        height: 9px;
+    }
+
+    /* Evita deslocamentos e sobreposições */
+
+    .model-card,
+    .model-card:hover,
+    .model-card__preview,
+    .model-card__preview:hover {
+        transform: none;
+    }
+}
+
+/* =====================================================
+   CELULARES MENORES
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .models__grid {
+        gap: 0.5rem;
+    }
+
+    .model-card__preview {
+        padding: 0.35rem;
+    }
+
+    .model-card__image {
+        border-radius: 0.45rem;
+    }
+
+    .model-card__preview::after {
+        right: 0.55rem;
+        bottom: 0.55rem;
+
+        font-size: 0.4rem;
+    }
+
+    .model-card__content {
+        padding: 0.58rem;
+    }
+
+    .model-card__title {
+        font-size: 0.7rem;
+    }
+
+    .model-card__features {
+        margin-top: 0.38rem;
+        gap: 0.14rem;
+    }
+
+    .model-card__features li {
+        padding: 0.14rem 0.22rem;
+
+        font-size: 0.39rem;
+    }
+
+    .model-card__link {
+        padding-top: 0.45rem;
+    }
+
+    .model-card__link::before {
+        padding: 0.26rem 0.38rem;
+
+        font-size: 0.4rem;
+    }
+
+    .model-card__link svg {
+        width: 8px;
+        height: 8px;
+    }
+}
